@@ -83,7 +83,7 @@ navbarPage(
     ),
     fluidRow(
       column(12,
-             DT::DTOutput("table")
+             plotlyOutput("graph2")
       )
     )
     
