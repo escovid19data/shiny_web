@@ -30,7 +30,7 @@ function(input, output, session) {
     if(is.null(input$select_province)) {
       df <- cases_data_chart
     } else {
-      df <- cases_data_chart %>% filter(province == input$select_province)
+      df <- cases_data_chart %>% filter(province %in% input$select_province)
     }
     
     plot_ly(data = df, x = ~date, y = ~get(input$select1), type = 'scatter',
