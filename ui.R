@@ -98,29 +98,71 @@ navbarPage(
     tags$head(
       tags$script(async = NA, src = "https://platform.twitter.com/widgets.js")
     ),
-    
     fluidRow(
       column(12,
-             uiOutput("tweet")
-             )
+             column(3,
+                    selectInput("falle_select1", "Variable",
+                                choices = c("Total fallecidos", "Fallecidos diarios", "Fallecidos por 100.000 h",
+                                            "Tasa de mortalidad %", "Media móvil semanal"))
+             ),
+             column(3,
+                    selectInput("falle_select_province","Provincias", choices= c("Todas" = "",unique(cases_data$province)),
+                                multiple = TRUE, 
+                    )
+                    
+             ),
+             column(3,
+                    sliderInput("falle_select_fecha",
+                                "Periodo:",
+                                min = as.Date("2020-01-01","%Y-%m-%d"),
+                                max = as.Date(Sys.Date(),"%Y-%m-%d"),
+                                value=c(as.Date("2020-01-01","%Y-%m-%d"),as.Date(Sys.Date())),
+                                timeFormat="%Y-%m-%d")
+                    # dateRangeInput("select_fecha", "Periodo", start = "2020-01-01",
+                    #                end = Sys.Date())
+                    
+             ),
+             column(3,
+                    awesomeCheckbox("falle_logar100",
+                                    label = "Escala logarítmica",
+                                    value = FALSE,
+                                    status = "danger")),
+      )
+    ),
+    fluidRow(
+      column(12,
+             plotlyOutput("falle_graph")
+      )
+    ),
+    fluidRow(
+      column(12,
+             plotlyOutput("falle_graph2")
+      )
     )
     
   ),
-  
+
+  tabPanel(navid = "novedades",
+           id = "novedades",
+           value = "novedades",
+           title = "Novedades",
+           tags$head(
+             useShinyjs(),
+             tags$link(
+               rel = "stylesheet", type = "text/css", href = "styles.css"
+             )
+           ),
+           fluidRow(
+             column(12,
+                    uiOutput("tweet")
+             )
+           )),
+
   # tabPanel(
-  #   navid = "resumen",
-  #   id = "resumen",
-  #   value = "resumen",
-  #   title = "Resumen",
-  #   tags$head(
-  #     useShinyjs(),
-  #     tags$link(
-  #       rel = "stylesheet", type = "text/css", href = "styles.css"
-  #     )
-  #   ),
-  #   
+  # 
+  # 
   #   resumenUI("resumen")
-  #   
+  # 
   # ),
   
   # tabPanel(

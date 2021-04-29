@@ -32,5 +32,18 @@ cases_data <- data_provinces %>%
   mutate(`Razón de Tasas` = round(`IA 14`/lag(`IA 14`,7), digits = 2)) %>% 
   mutate(`Media móvil semanal` = round(lag(rollmean(`Casos Nuevos`, 7, na.pad = T, align = "right"), 0), digits = 0)) %>% 
   rename(`Casos Totales` = cases_accumulated)
+
+
+
+deceased_data <- data_provinces %>% 
+  select(1:4, cases_accumulated, deceased, poblacion) %>% 
+  group_by(province) %>% 
+  arrange(date) %>% 
+  fill(cases_accumulated) %>% 
+  mutate(`Fallecidos diarios` = cases_accumulated-lag(cases_accumulated,1)) %>% 
+  mutate(`Fallecidos por 100.000 h` = (deceased/poblacion*100000)) %>% 
+  mutate(`Tasa de mortalidad %` = deceased/poblacion*100) %>% 
+  mutate(`Media móvil semanal` = round(lag(rollmean(`Fallecidos diarios`, 7, na.pad = T, align = "right"), 0), digits = 0)) %>% 
+  rename(`Total fallecidos` = deceased)
   
 
