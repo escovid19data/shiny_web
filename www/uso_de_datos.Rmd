@@ -1,0 +1,64 @@
+---
+title: "Uso de datos"
+output: html_document
+---
+
+
+## Artículos en medios
+
+* "EU wil kleurcodesysteem voor reizen tussen lidstaten" en *Espanje!*\
+https://www.espanje.nl/eu-kleurcode-lidstaten/ \
+Visitado el 10 de septiembre de 2020
+
+* eldiario.es: ¿Por qué Canarias resiste al coronavirus y Soria no?  (Raquel Ejerique, Raúl Sánchez) https://www.eldiario.es/sociedad/Canarias-pocos-casos-coronavirus-Segovia_0_1017698330.html
+* ABC: Las provincias que mejor y peor llegan para pasar a la siguiente fase de la desescalada (Luís Cano) https://www.abc.es/sociedad/abci-coronavirus-provincias-mejor-y-peor-llegan-para-pasar-siguiente-fase-desescalada-202005051948_noticia.html
+* El País: Residencias, UCI y aglomeración: los puntos débiles de cada provincia para enfrentar al virus en la nueva fase (Borja Andrino, Daniele Grasso, Kiko Llaneras)  https://elpais.com/sociedad/2020-05-10/residencias-uci-y-aglomeracion-los-puntos-debiles-de-cada-provincia-para-enfrentar-al-virus-en-la-nueva-fase.html
+* El País: Lo que inquieta del estudio de prevalencia en España: ¿Un muerto por cada 100 infectados? (Borja Andrino, Daniele Grasso, Kiko Llaneras) https://elpais.com/sociedad/2020-05-13/lo-que-inquieta-del-estudio-de-prevalencia-en-espana-un-muerto-por-cada-100-infectados.html 
+* 2020-06-04. El País: El mapa del riesgo de rebrote en España: consulta la situación de tu provincia (Borja Andrino, Daniele Grasso, Kiko Llaneras, Luís Sevillano, Ignacio Povedano, Fernando Hernández) https://elpais.com/especiales/2020/coronavirus-covid-19/fases-desescalada/riesgo-de-rebrotes/
+* El País: Asteriscos, incoherencias y opacidad: 15 problemas de Sanidad con la gestión de datos del coronavirus  (Borja Andrino, Daniele Grasso, Kiko Llaneras) https://elpais.com/sociedad/2020-05-26/asteriscos-incoherencias-y-opacidad-15-problemas-del-ministerio-con-la-gestion-de-datos-del-coronavirus.html
+* 2020-08-23. El País: ¿Qué dicen los datos de agosto sobre la nueva expansión del coronavirus en España? (Kiko Llaneras, Artur Galocha) https://elpais.com/sociedad/2020-08-22/que-dicen-los-datos-de-agosto-sobre-la-nueva-expansion-del-coronavirus-en-espana.html 
+* La democratización de los datos mejorará la toma de decisiones (Diego López-de-Ipiña González-de-Artaza, Diego Casado-Mansilla, JAvier García-Zubía, Mario Castro Ponce)  https://theconversation.com/la-democratizacion-de-los-datos-mejorara-la-toma-de-decisiones-140366
+* 2020-11-05. Covid-19: la malinterpretación de los datos de la pandemia daña la confianza del público (VV.AA.) https://blogs.publico.es/otrasmiradas/40110/covid-19-la-malinterpretacion-de-los-datos-de-la-pandemia-dana-la-confianza-del-publico/
+* 2020-11-12. Autonomías y Covid-19: ¿datos para comunicar o para confundir?  (David Rodríguez Mateos) https://theconversation.com/profiles/david-rodriguez-mateos-1170231
+* 2020-11-23. Gráficos para entender por qué la segunda ola en España no tiene nada que ver con la primera https://es.noticias.yahoo.com/coronavirus-espa%C3%B1a-exceso-fallecidos-segunda-ola-periodismo-datos-graficos-101944127.html 
+* 2020-11-27. La curva se aplana en toda España y los ingresados en UCI descienden un 10% (Marta Ley) https://www.elconfidencial.com/espana/2020-11-27/ingresados-uci-descienden_2850287/
+* 2020-11-30. La cifra de muertos por COVID-19 de Catalunya sigue sin cuadrar con la de Sanidad nueve meses después (Pau Rodríguez, Raúl Sánchez ) https://www.eldiario.es/catalunya/cifra-muertos-covid-19-catalunya-sigue-cuadrar-sanidad-nueve-meses-despues_1_6470669.html
+
+## Estudios y proyectos científicos (Academia)
+
+* Eduardo Gutiérrez y Enrique Moral-Benito. Banco de España (2020) Medidas de contención, evolución del empleo y propagación del Covid-19 en los municipios españoles. 
+https://www.bde.es/f/webbde/SES/Secciones/Publicaciones/PublicacionesSeriadas/DocumentosOcasionales/20/Fich/do2022.pdf 
+* Briz-Redón, Á., & Serrano-Aroca, Á. (2020). A spatio-temporal analysis for exploring the effect of temperature on COVID-19 early evolution in Spain. Science of The Total Environment, 138811. https://www.sciencedirect.com/science/article/pii/S0048969720323287
+* "Effects of mobility and multi-seeding on the propagation of the COVID-19 in Spain" (pre-print) Mattia Mazzoli, David Mateo, Alberto Hernando, Sandro Meloni y Jose Javier Ramasco. https://www.medrxiv.org/content/10.1101/2020.05.09.20096339v2
+* "Regional correlations of COVID-19 in Spain" (pre-print) por Daniel Oto-Peralías https://osf.io/tjdgw/download
+* Paez, A., Lopez, F. A., Menezes, T., Cavalcanti, R., & Pitta, M. G. D. R. A Spatio‐Temporal Analysis of the Environmental Correlates of COVID‐19 Incidence in Spain. Geographical Analysis. https://onlinelibrary.wiley.com/doi/full/10.1111/gean.12241. Los datos finalmente usados, recopilando diferentes bases de datos [pueden verse en este repositorio](https://github.com/paezha/covid19-environmental-correlates).
+* Martorell-Marugán, J., Villatoro-García, J. A., García-Moreno, A., López-Domínguez, R., Requena, F., Merelo, J. J., ... & Carmona-Sáez, P. (2020). DatAC: A visual analytics platform to explore climate and air quality indicators associated with the COVID-19 pandemic in Spain. Science of The Total Environment, 141424. https://doi.org/10.1016/j.scitotenv.2020.141424 Se usan los datos de Escovid19data en la herramienta DatAC (https://covid19.genyo.es). En esta herramienta de visualización y análisis integramos los datos de COVID-19 con datos de factores ambientales como contaminantes y variables meteorológicas. El artículo describiendo la herramienta ha sido recientemente publicado en la revista Science of the Total Environment y puede consultarse aquí: https://doi.org/10.1016/j.scitotenv.2020.141424
+* "Aplicaciónde la IA a la predicción inmediata de series temporales para optimizar la gestión de recursos en epidemias de José Luis Aznarte" Mellado. Proyecto de la UNED (UNIVERSIDAD  NACIONAL  DE  EDUCACION  A  DISTANCIA) financiado por el Ministerio de Ciencia e Innovación a cargo del Fondo - COVID19 desde la Dirección del Instituto de Salud Pública Carlos III. En este vídeo se explica el proyecto y cómo se usan los datos de Escovid19data https://www.institutoroche.es/jornadas/97-algoritmos-para-la-salud-big-data-clinico-inteligencia-artificial-y-su-traslacion-a-la-medicina-personalizada-de-precision/multimedia/511
+
+## Artículos, noticias y reportajes sobre Escovid19data
+
+* 2020-06-08. El País: EsCovid19data: los voluntarios que llevan tres meses poniendo orden en los datos de la pandemia (Montse Hidalgo Pérez) https://elpais.com/tecnologia/2020-06-08/escovid19data-los-voluntarios-que-llevan-tres-meses-poniendo-orden-en-los-datos-de-la-pandemia.html
+* 2020-08-26. El Confidencial: Guillermo Cid (2020) "El caos de datos del covid: los voluntarios que destapan lo que Sanidad no cuenta" https://www.elconfidencial.com/tecnologia/2020-08-26/tuiteros-datos-coronavirus-espana-covid-gobierno_2724595/
+* 2020-09-07. Nobbot: Tania Alonso Cascallana (2020) "Así son y así trabajan los voluntarios que ordenan los números de la pandemia"  https://www.nobbot.com/personas/escovid19data/
+* 2020-12-16. Abrir datos abiertos | Medialab-Prado Madrid https://www.medialab-prado.es/noticias/abrir-datos-abiertos
+* 2021-03-19. Spotify – Episodio 1. Datos abiertos durante la pandemia. - Estapodcast | Podcast on Spotify https://open.spotify.com/episode/5mz3RAaPqA4eAKOYlMUhbc
+* 2021-05-17. Libro blanco de la covid19 175 propuestas para el futuro · Boulevard Magazine https://www.eitb.eus/es/radio/radio-euskadi/programas/boulevard/detalle/8056506/libro-blanco-de-covid19-175-propuestas-para-futuro/
+* 2021-05-19. esCOVID19data, compromís amb les dades de la pandèmia - Arxivers la DaDa https://arxivers.com/ladada/escovid19data-compromis-amb-les-dades-de-la-pandemia/
+
+## Visualizaciones y uso de los datos
+
+Mándanos tu análisis o visualización si usas estos datos (covid19@montera34.com):
+
+Actualizado diariamente: 
+* [Gráficos por provincias y CCAA](https://lab.montera34.com/covid19/provincias.html) mantenido por [@numeroteca](https://twitter.com/numeroteca) en [@montera34](https://twitter.com/montera34). 
+* [Tablas por provincias y CCAA](https://lab.montera34.com/covid19-r/reports/tablas-escovid19data.html) mantenido por [@numeroteca](https://twitter.com/numeroteca). Se generan automáticamente con RMarkdown.
+* [Visualización de evolución de múltiples variables](https://iguacel.github.io/iguacel/#/exp/20) mantenido por [@infoiguacel](https://twitter.com/infoiguacel).
+* [Un dashboard de análisis](https://cultureofinsight.shinyapps.io/covid-19/) mantenido por [@harlesden88](https://twitter.com/harlesden88).
+
+No se actualizan:
+* [Dashboard interactivo en Tableau con los datos provinciales (en Tableau Public)](https://public.tableau.com/profile/javier.cant.n#!/vizhome/COVIDprov/Historia1?publish=yes) mantenido por [@ProsumidorSoc](https://twitter.com/ProsumidorSoc).
+* [La evolución del COVID-19 en España y en el mundo, en gráficos](https://picanumeros.wordpress.com/2020/03/13/la-evolucion-del-covid-19-en-espana-en-graficos/) por [@picanumeros](https://twitter.com/picanumeros)
+* [Mapas de afectados por coronavirus en España](https://mapa-de-afectados-por-coronavirus-plataformacovid.hub.arcgis.com/) iniciativa mantenida por voluntarios e impulsada por Esri España.
+
+
+
