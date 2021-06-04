@@ -11,6 +11,7 @@ library(tidyverse)
 library(dplyr)
 library(shinyjs)
 library(zoo)
+library(lubridate)
 
 # rmdfiles <- c("RMarkdownFile.rmd")
 # sapply(rmdfiles, knit, quiet = T)
@@ -56,7 +57,9 @@ hospi_data <- data_provinces %>%
   arrange(date) %>% 
   mutate(`Hospitalizados media móvil semanal` = round(lag(rollmean(Hospitalizados, 7, na.pad = T, align = "right"), 0), digits = 0)) %>% 
   mutate(`UCI media móvil semanal` = round(lag(rollmean(UCI, 7, na.pad = T, align = "right"), 0), digits = 0)) %>% 
-  filter(date >= "2020-02-20")
+  filter(date >= "2020-02-20") %>% 
+  filter(!is.na(Hospitalizados))
+  
 
 ccaa_pob <- read.csv("https://raw.githubusercontent.com/montera34/escovid19data/master/data/output/covid19-ccaa-spain_consolidated.csv") %>% 
   select(ccaa, poblacion) %>% 
