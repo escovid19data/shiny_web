@@ -87,12 +87,13 @@ introServer <- function(id) {
           add_trace(x = ~date, y = ~`IA 14`, type = "scatter", mode = "lines", yaxis = "y2", name = "IA 14",
                     hovertemplate = paste("%{x}: <br> IA 14: %{y}<extra></extra>")) %>%
           layout(yaxis2 = list(title = "",overlaying = "y", side = "right",rangemode = "tozero"),
-                 xaxis= list(title = "",autotick = F, dtick = 30),
+                 xaxis= list(title = "",autotick = T, dtick = 30),
                  yaxis = list( title = ""),
                  legend = list(orientation = "h",   # show entries horizontally
                                xanchor = "center",  # use center of legend as anchor
                                x = 0.5,
-                               y = -0.2)) %>% 
+                               y = -0.2),
+                 margin = list(r = 50)) %>% 
           config(displayModeBar = F)
       })
       
@@ -158,7 +159,8 @@ introServer <- function(id) {
                  legend = list(orientation = "h",   # show entries horizontally
                                xanchor = "center",  # use center of legend as anchor
                                x = 0.5,
-                               y = -0.2)) %>% 
+                               y = -0.2),
+                 margin = list(r = 50)) %>% 
           config(displayModeBar = F)
         
         
@@ -201,12 +203,13 @@ introServer <- function(id) {
         
         plot_ly(falle_data_chart, x = ~date, y = ~`Fallecidos diarios`, type = "bar", name = "Fallecidos diarios",
                 hovertemplate = paste("%{x}: <br> Fallecidos diarios: %{y}<extra></extra>")) %>%
-          layout(xaxis= list(title = "",autotick = F, dtick = 30),
+          layout(xaxis= list(title = "",autotick = T, dtick = 30),
                  yaxis = list( title = ""),
                  legend = list(orientation = "h",   # show entries horizontally
                                xanchor = "center",  # use center of legend as anchor
                                x = 0.5,
-                               y = -0.2)) %>% 
+                               y = -0.2),
+                 margin = list(r = 50)) %>% 
           config(displayModeBar = F)
       })
       
@@ -253,12 +256,13 @@ introServer <- function(id) {
           add_trace(x = ~date, y = ~`UCI`, type = "scatter", mode = "lines", yaxis = "y2", name = "UCI",
                     hovertemplate = paste("%{x}: <br> UCI: %{y}<extra></extra>")) %>%
           layout(yaxis2 = list(title = "",overlaying = "y", side = "right",rangemode = "tozero"),
-                 xaxis= list(title = "",autotick = F, dtick = 30),
+                 xaxis= list(title = "",autotick = T, dtick = 30),
                  yaxis = list( title = ""),
                  legend = list(orientation = "h",   # show entries horizontally
                                xanchor = "center",  # use center of legend as anchor
                                x = 0.5,
-                               y = -0.2)) %>% 
+                               y = -0.2),
+                 margin = list(r = 50)) %>% 
           config(displayModeBar = F)
       })
       

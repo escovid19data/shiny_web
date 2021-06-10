@@ -94,7 +94,7 @@ vac_data <- read_csv("https://raw.githubusercontent.com/montera34/escovid19data/
   ungroup() %>% 
   select(date,ccaa, `Total 1 dosis`, `Total pauta completada`,`Administradas diarias`,
          `Administradas media móvil semanal`,poblacion) %>% 
-  filter(ccaa != "Fuerzas Armadas") %>% 
+  filter(ccaa != "Fuerzas Armadas", ccaa != "Sanidad Exterior") %>% 
   mutate(`% 1 dosis` = round(`Total 1 dosis`/poblacion*100, digits = 1)) %>% 
   mutate(`% pauta completada` = round(`Total pauta completada`/poblacion*100, digits = 1))
 
