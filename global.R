@@ -16,10 +16,11 @@ library(lubridate)
 # rmdfiles <- c("RMarkdownFile.rmd")
 # sapply(rmdfiles, knit, quiet = T)
 
-data_provinces <- read.csv("https://raw.githubusercontent.com/montera34/escovid19data/master/data/output/covid19-provincias-spain_consolidated.csv")
+data_provinces <- read.csv("https://raw.githubusercontent.com/montera34/escovid19data/master/data/output/covid19-provincias-spain_consolidated.csv", stringsAsFactors = F)
 
 
 cases_data <- data_provinces %>% 
+  mutate(date = as.Date.character(date)) %>% 
   select(1:8, cases_accumulated, cases_accumulated_PCR, poblacion) %>% 
   mutate(cases_accumulated = if_else(is.na(cases_accumulated),cases_accumulated_PCR, cases_accumulated)) %>% 
   group_by(province) %>% 
@@ -38,6 +39,7 @@ cases_data <- data_provinces %>%
 
 
 deceased_data <- data_provinces %>% 
+  mutate(date = as.Date.character(date)) %>% 
   select(1:4, cases_accumulated, deceased, poblacion) %>% 
   group_by(province) %>% 
   arrange(date) %>% 
@@ -50,6 +52,7 @@ deceased_data <- data_provinces %>%
   filter(date >= "2020-02-20")
 
 hospi_data <- data_provinces %>% 
+  mutate(date = as.Date.character(date)) %>% 
   select(1:4, Hospitalizados = num_hosp,
          `Hospitalizados acumulados` = num_hosp_cum, 
          `UCI` = num_uci, `UCI Acumulados` = num_uci_cum, poblacion) %>% 

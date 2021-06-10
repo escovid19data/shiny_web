@@ -7,7 +7,9 @@ fluidRow(
     navbarPage(
       id = "navbarID",
       title = "esCOVID-19data", 
-      #header=singleton(tags$head(includeScript("google-analytics.js"))),#href = "//cultureofinsight.com", target = "blank"),)),
+      # tags$head(
+      #   includeScript("google-analytics.js")),
+      header=singleton(tags$head(includeScript("google-analytics.js"))),#href = "//cultureofinsight.com", target = "blank"),)),
       inverse = F,
       collapsible = TRUE, 
       theme = shinytheme("yeti"),
