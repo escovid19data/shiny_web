@@ -9,7 +9,8 @@ fluidRow(
       title = "esCOVID-19data", 
       # tags$head(
       #   includeScript("google-analytics.js")),
-      header=singleton(tags$head(includeScript("google-analytics.js"))),#href = "//cultureofinsight.com", target = "blank"),)),
+      header=singleton(tags$head(tags$script(src="https://lab.montera34.com/covid19/js/stats.js"))),
+      #header=singleton(tags$head(HTML("google-analytics.js"))),#href = "//cultureofinsight.com", target = "blank"),)),
       inverse = F,
       collapsible = TRUE, 
       theme = shinytheme("yeti"),
@@ -123,6 +124,20 @@ fluidRow(
         id = "datos",
         value = "datos",
         title = "Acceso a datos",
+        # tags$head(
+        #   
+        #   tags$link(
+        #     rel = "stylesheet", type = "text/css", href = "styles.css"
+        #   )
+        # ),
+        
+        
+      ),
+      tabPanel(
+        navid = "codigo",
+        id = "codigo",
+        value = "codigo",
+        title = "Codigo",
         # tags$head(
         #   
         #   tags$link(

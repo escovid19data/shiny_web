@@ -53,9 +53,9 @@ deceased_data <- data_provinces %>%
 
 hospi_data <- data_provinces %>% 
   mutate(date = as.Date.character(date)) %>% 
-  select(1:4, Hospitalizados = num_hosp,
+  select(1:4, Hospitalizados = hospitalized,
          `Hospitalizados acumulados` = num_hosp_cum, 
-         `UCI` = num_uci, `UCI Acumulados` = num_uci_cum, poblacion) %>% 
+         `UCI` = intensive_care, `UCI Acumulados` = num_uci_cum, poblacion) %>% 
   group_by(province) %>% 
   arrange(date) %>% 
   mutate(`Hospitalizados media móvil semanal` = round(lag(rollmean(Hospitalizados, 7, na.pad = T, align = "right"), 0), digits = 0)) %>% 
@@ -124,42 +124,4 @@ vac_etarios <- vac_etarios_2 %>%
   rbind(vac_etarios_1)
 
 
-# jsCodeEx <- "shinyjs.activateTab = function(name){
-#                   setTimeout(function(){
-#                   $('a[href$=' + '\"#shiny-tab-' + name + '\"' + ']').addClass('active')
-#                   
-#                   }, 200);
-#                   }"
 
-
-# 
-# vaccines_data_1_dosis <- read_csv("https://raw.githubusercontent.com/montera34/escovid19data/master/data/original/vacunas/estado_vacunacion_etarios_1dosis_.csv") %>% 
-#   select(date_pub,ccaa,contains("%")) %>% 
-#   gather(grupo_edad, porcen_vac1, 3:10) %>% 
-#   mutate(date = as.Date(date_pub,
-#                         format = "%d/%m/%y")) %>% 
-#   filter(date == max(date))
-# 
-# 
-# %>% 
-#   gather(grupo_Edad, primera_Dosis, c(contains("dosis"))) %>% 
-#   gather(grupo_edadPob, poblacion, contains("Población")) %>% 
-#   unique() %>%  
-#   mutate(grupo_edadPob = gsub("Población INE","",grupo_edadPob)) %>% 
-#   mutate(grupo_edadPob = gsub("Personas con al menos 1 dosis","",grupo_edadPob)) %>% 
-#   mutate(date = as.Date(date_pub,
-#           format = "%d/%m/%y")) %>% 
-#   filter(date == max(date)) %>% 
-#   select(date,ccaa,grupo_edadPob,primera_Dosis,poblacion) %>% 
-#   mutate(poblacion = as.numeric(poblacion)) %>% 
-#   mutate(porcentaje = poblacion/primera_Dosis*100)
-#   
-#   
-# 
-# vaccines_data_2_dosis <- read_csv("https://raw.githubusercontent.com/montera34/escovid19data/master/data/original/vacunas/estado_vacunacion_etarios_pauta_completa_.csv") %>% 
-#   select(-contains("%")) %>% 
-#   gather(grupo_Edad, primera_Dosis, contains("pauta")) %>% 
-#   gather(grupo_edadPob, poblacion, contains("Población")) %>% 
-#   unique()
-# 
-# 

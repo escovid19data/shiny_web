@@ -21,7 +21,7 @@ datosServer <- function(id) {
     function(input, output, session) {
       
       output$frame <- renderUI({
-        tags$iframe(src="https://flatgithub.com/montera34/escovid19data", height=400, width= "100%")
+        tags$iframe(src="https://flatgithub.com/montera34/escovid19data", height=800, width= "100%")
       })
     }
   )
